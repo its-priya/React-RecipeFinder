@@ -1,0 +1,117 @@
+
+.recipes{
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0 30px 30px 30px;
+    background: var(--bg-light-color);
+    justify-content: center;
+}
+
+.recipes > h1{  
+    margin-bottom: 40px;
+}
+
+.recipes-container{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.recipe-items > li{
+    margin: 0;
+    padding: 0;
+}
+
+.card-item{
+    justify-self: center;
+    background: var(--card-bg-color);
+    box-shadow: 0 3px 10px 0 #aaa;
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.card-item-link{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-item-image-wrap{
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+
+.cards_item_image_wrap::after {
+    content: attr(data-category);
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+    padding: 6px 8px;
+    max-width: calc((100%) - 60px);
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1f98f4;
+    box-sizing: border-box;
+}
+
+.card-item-image-wrap > img{
+    height: 200px;
+}
+
+.card-item-image {
+    display: block;
+    object-fit: cover;
+    transition: all 0.2s linear;
+}
+
+.card-item-image:hover {
+    transform: scale(1.1);
+}
+
+.card-item-info {
+    text-align: center;
+    padding: 0 12px;
+}
+.card-item-title {
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+    max-width: 250px;
+}
+
+.card-item-btns{
+    display: flex;
+    flex-direction: row;
+    padding: 0 12px 15px 12px;
+}
+
+.btn{
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    margin: 4px;
+    flex: 1;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+.btn-ing{
+    background: var(--bg-light-color);
+}
+.btn-rec{
+    background: var(--btn-bg-color);
+}
+.btn:hover{
+    background: var(--card-bg-color);
+}

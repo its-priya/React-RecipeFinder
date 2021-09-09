@@ -1,0 +1,136 @@
+
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.navbar{
+    background-color: var(--bg-dark-color);
+    height: 80px;
+    box-shadow: 0 1px 7px 0 #555;
+    position: fixed;
+    width: 100%;
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.navbar-brand{
+    top: 0;
+    left: 0;
+    transform: translate(15%, 40%);
+    display: inline-flex;
+}
+.navbar-brand > img{
+    height: 45px;
+    width: 45px;
+}
+.navbar-brand-name{
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--font-color);
+    margin-left: 8px;
+}
+.navbar-nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    transform: translate(-25%, 50%);
+}
+
+.nav-select{
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 1rem;
+    background: var(--card-bg-color);
+    padding: 10px;
+    color: var(--bg-dark-color);
+    font-weight: bold;
+    padding: 10px;
+}
+.nav-select option{
+    font-weight: bold;
+}
+
+.select-item:hover{
+    background-color: var(--bg-light-color);
+}
+
+.search-icon{
+    height: 32px;
+    width: 32px;
+}
+.nav-searchbar{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.search-section{
+    height: 90vh;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search-section > img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+} 
+.search-section > h1{
+    font-size: 80px;
+    color: #A4DE02;
+}
+h1, h2{
+    text-align: center;
+}
+.search-container{
+    border-radius: 30px;
+    margin: 10px;
+    width: 600px;
+    height: 50px;
+    display: inline-flex;
+    background-color: whitesmoke;
+}
+.search-container > img{
+    width: 8%;
+    margin: 8px;
+}
+.search-bar{
+    outline: none;
+    border: none;
+    width: 92%;
+    font-size: 1.2rem;
+    background: transparent;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+@media screen and (max-width: 686px){
+    .search-container{
+        width: 80vw;
+    }
+    .nav-select{
+        width: 130px;
+    }
+}
+@media screen and (max-width: 468px){
+    .search-section > h1{
+        font-size: 50px;
+        margin-top: -150px;
+    }
+    .search-bar{
+        font-size: 1rem;
+    }
+}

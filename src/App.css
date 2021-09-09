@@ -1,0 +1,16 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-dark-color: #242424;
+    --primary-color: #35363A;
+    --font-color: #fff;
+    --secondary-color: #252e48;
+    --bg-light-color: #E2BCB3;
+    --card-bg-color: #FCE1CE;
+    --btn-bg-color: #BBC9AD;
+}
+body{
+    background: beige;
+}
